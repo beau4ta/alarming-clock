@@ -25,16 +25,16 @@
           <h2 class="time"></h2>
         </div>
         <div class="buttons">
+            <button class="alarm-btn">ALARM</button>
+            <button class="time-btn">TIME</button>
           <button class="hour-btn">HOUR</button>
           <button class="min-btn">MIN</button>
-          <button class="alarm-btn">ALARM</button>
-          <button class="time-btn">TIME</button>
           <button class="save-btn">SAVE</button>
           <button class="reset-btn">RESET</button>
         </div>
         <div class="snoozeSwitch">
           <label class="switch">
-            <input type="checkbox" name="switch"/>
+            <input type="checkbox" name="switch" id="switch"/>
             <span class="slider round"></span>
           </label>
           <button class="snooze">SNOOZE</button>
@@ -42,7 +42,12 @@
       </div>
     </main>
 
+    <audio class="alarm-sound">
+        <source src="alarm.mp3" type="audio/mp3">
+    </audio>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
