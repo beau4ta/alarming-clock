@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alarm Clock</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <h1 class="title">A L A R M : C L O C K</h1>
+      <h3 class="date"></h3>
     </header>
 
     <main class="main">
       <div class="clock">
         <div class="face">
           <h2 class="time"></h2>
-          <div class="am-pm">
-            <input type="checkbox" name="am" class="am" value="am" />
-            <label for="am">AM</label>
-            <input type="checkbox" name="pm" class="pm" value="pm" />
-            <label for="pm">PM</label>
-          </div>
         </div>
         <div class="buttons">
-            <button class="h-btn">H</button>
-            <button class="m-btn">M</button>
-            <button class="alarm-btn">ALARM</button>
-            <button class="time-btn">TIME</button>
-            <button class="save-btn">SAVE</button>
-            <button class="reset-btn">RESET</button>
+          <button class="hour-btn">HOUR</button>
+          <button class="min-btn">MIN</button>
+          <button class="alarm-btn">ALARM</button>
+          <button class="time-btn">TIME</button>
+          <button class="save-btn">SAVE</button>
+          <button class="reset-btn">RESET</button>
         </div>
-        <label class="switch">
-            <input type="checkbox">
+        <div class="snoozeSwitch">
+          <label class="switch">
+            <input type="checkbox" name="switch"/>
             <span class="slider round"></span>
-        </label>
+          </label>
+          <button class="snooze">SNOOZE</button>
+        </div>
       </div>
     </main>
 

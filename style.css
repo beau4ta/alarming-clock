@@ -1,3 +1,80 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    margin: 2rem;
+    text-align: center;
+    color: rgb(165, 60, 60);
+    text-shadow: 2px 2px rgb(112, 39, 39);
+    font-size: 2.2rem;
+}
+
+.clock{
+    border: double black 0.5rem;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin: 2rem;
+    background-color: rgb(71, 71, 71);
+    box-shadow: 5px 10px;
+    width: 50%;
+}
+
+.face{
+    background-image: linear-gradient(to bottom right,rgb(111, 111, 111), rgb(75, 75, 75));
+    opacity: 0.8;
+    border: rgb(92, 92, 92) solid 0.2rem;
+    border-radius: 1rem;
+    text-align: right;
+    text-shadow: 2px 2px rgb(112, 39, 39);
+    padding-right: 5rem;
+    color: rgb(165, 60, 60);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.buttons{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hour-btn,
+.min-btn,
+.alarm-btn,
+.time-btn,
+.save-btn,
+.reset-btn{
+    padding: 0.3rem;
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: rgb(41, 41, 41);
+    color: rgb(165, 60, 60);
+    font-size: 1rem;
+}
+
+.snoozeSwitch{
+    display: flex;
+    align-items: center;
+}
+
+.snooze{
+    border-radius: 0.5rem;
+    background-color: rgb(41, 41, 41);
+    color: rgb(165, 60, 60);
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 0.3rem;
+}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -21,7 +98,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: rgb(111, 111, 111);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -33,17 +110,17 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(41, 41, 41);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: rgb(144, 52, 52);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px rgb(112, 39, 39);
   }
   
   input:checked + .slider:before {
